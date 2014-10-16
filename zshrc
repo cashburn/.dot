@@ -45,7 +45,7 @@ ZSH_THEME="cashburn"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-syntax-highlighting web-search dirhistory common-aliases )
+plugins=(git gitfast github zsh-syntax-highlighting web-search dirhistory common-aliases zsh-history-substring-search)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -57,8 +57,12 @@ export PATH="/homes/cashburn/bin/.amd64-linux:/homes/cashburn/bin:/usr/local/bin
 function mkcd { mkdir -pv "$1" && cd "$1"; } # mkdir then cd
 function mkgit { mkcd "$1" && git init; } # mkcd then git init
 
-bindkey '\e[A' history-beginning-search-backward
-bindkey '\e[B' history-beginning-search-forward
+source ~/.oh-my-zsh/custom/plugins/git-completion/git-prompt.sh
+#source ~/.oh-my-zsh/custom/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
+#setopt PROMPT_SUBST ; PS1='[%n@%m %c$(__git_ps1 " (%s)")]\$ '
+zmodload zsh/terminfo
+bindkey "$terminfo[kcuu1]" history-substring-search-up
+bindkey "$terminfo[kcud1]" history-substring-search-down
 
 #DIR_COLORS="$HOME/.dir_colors"
 #dircolors $DIR_COLORS
@@ -68,9 +72,9 @@ export LS_COLORS='rs=0:di=01;36:ln=01;35:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
+#   export EDITOR='pluma'
 # else
-#   export EDITOR='mvim'
+#   export EDITOR='pluma'
 # fi
 
 # Compilation flags
