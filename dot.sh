@@ -10,6 +10,6 @@ github_clone "zsh-users/zsh-history-substring-search" "$HOME/.oh-my-zsh/custom/p
 
 
 ln -s "$HOME/.dot/zshrc" "$HOME/.zshrc"
-ln -s "$HOME/.dot/cashburn.zsh-theme" "$HOME/.oh-my-zsh/custom/themes/cashburn.zsh-theme"
-chsh -S /bin/zsh
+ln -s "$HOME/.dot/cashburn.zsh-theme" "$HOME/.oh-my-zsh/themes/cashburn.zsh-theme"
+chsh -s /bin/zsh
 
