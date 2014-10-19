@@ -29,8 +29,10 @@ export PATH="/homes/cashburn/bin/.amd64-linux:/homes/cashburn/bin:/usr/local/bin
 
 #Personal configuration
 
+DATE=`date +%Y-%m-%d`
 function mkcd { mkdir -pv "$1" && cd "$1"; } # mkdir then cd
-function mkgit { mkcd "$1" && git init; } # mkcd then git init
+function mkgit { mkcd "$1" && git init && git remote add "https://github.com/cashburn/&1.git"; } # mkcd then git init
+function gitpush { git add * && git commit -m "$DATE" && git push "https://github.com/cashburn/$1.git";}
 
 #source ~/.oh-my-zsh/custom/plugins/git-completion/git-prompt.sh
 #source ~/.oh-my-zsh/custom/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
@@ -64,7 +66,7 @@ export LS_COLORS='rs=0:di=01;36:ln=01;35:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias i="~/bin/dirinfo"
-alias 180="cd ~/cs180"
+alias cd180="cd ~/cs180"
 alias zshrc="pluma ~/.zshrc &"
 
 
