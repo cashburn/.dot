@@ -30,6 +30,7 @@ export PATH="/homes/cashburn/bin/.amd64-linux:/homes/cashburn/bin:/usr/local/bin
 #Personal configuration
 
 DATE=`date +%Y-%m-%d`
+
 function mkcd { mkdir -pv "$1" && cd "$1"; } # mkdir then cd
 function mkgit { mkcd "$1" && git init && git remote add "https://github.com/cashburn/&1.git"; } # mkcd then git init
 function gitpush { git add * && git commit -m "$DATE" && git push "https://github.com/cashburn/$1.git";}
