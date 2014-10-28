@@ -36,6 +36,8 @@ function mkgit { mkcd "$1" && git init && git remote add "https://github.com/cas
 function gitpush { git add * && git commit -m "$DATE" && git push "https://github.com/cashburn/$1.git";}
 function gitrm { git rm `git ls-files --deleted`; }
 function rmclass { find . -type f -name "*.class" -exec rm -f {} \; }
+function edit { pluma $1 & ;}
+
 
 #source ~/.oh-my-zsh/custom/plugins/git-completion/git-prompt.sh
 #source ~/.oh-my-zsh/custom/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
