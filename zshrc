@@ -34,6 +34,8 @@ DATE=`date +%Y-%m-%d`
 function mkcd { mkdir -pv "$1" && cd "$1"; } # mkdir then cd
 function mkgit { mkcd "$1" && git init && git remote add "https://github.com/cashburn/&1.git"; } # mkcd then git init
 function gitpush { git add * && git commit -m "$DATE" && git push "https://github.com/cashburn/$1.git";}
+function gitrm { git rm `git ls-files --deleted`; }
+function rmclass { find . -type f -name "*.class" -exec rm -f {} \; }
 
 #source ~/.oh-my-zsh/custom/plugins/git-completion/git-prompt.sh
 #source ~/.oh-my-zsh/custom/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
