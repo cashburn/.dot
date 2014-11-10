@@ -14,5 +14,6 @@ github_clone "zsh-users/zsh-history-substring-search" "$HOME/.oh-my-zsh/custom/p
 ln -s "$HOME/.dot/zshrc" "$HOME/.zshrc"
 ln -s "$HOME/.dot/cashburn.zsh-theme" "$HOME/.oh-my-zsh/themes/cashburn.zsh-theme"
 ln -s "$HOME/.dot/background.png" "$HOME/Pictures/background.png"
+ln -s "$HOME/.dot/.gitignore_global" "$HOME/.gitignore_global"
 chsh -s /bin/zsh
 
