@@ -38,6 +38,7 @@ function gitpush { git add * && git commit -m "$DATE" && git push;}
 function gitrm { git rm `git ls-files --deleted`; }
 function rmclass { find . -type f -name "*.class" -exec rm -f {} \; }
 function edit { pluma $1 & ;}
+function drjava { java -jar ~/.dot/drjava.jar $1 & ;}
 
 
 #source ~/.oh-my-zsh/custom/plugins/git-completion/git-prompt.sh
@@ -90,3 +91,5 @@ alias zshrc="pluma ~/.zshrc &"
 
 
 
+export PATH=${PATH}:/p/android-sdk/tools
+export PATH=${PATH}:/p/android-sdk/platform-tools
