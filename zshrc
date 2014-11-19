@@ -37,6 +37,7 @@ function gitpull { git pull "https://github.com/cashburn/$1.git" && git remote a
 function gitpush { git add * && git commit -m "$DATE" && git push;}
 function gitrm { git rm `git ls-files --deleted`; }
 function rmclass { find . -type f -name "*.class" -exec rm -f {} \; }
+function rm~ { find . -type f -name "*.*~" -exec rm -f {} \; }
 function edit { pluma $1 & ;}
 function drjava { java -jar ~/.dot/drjava.jar $1 & ;}
 
