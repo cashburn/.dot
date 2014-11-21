@@ -32,11 +32,12 @@ export PATH="/homes/cashburn/bin/.amd64-linux:/homes/cashburn/bin:/usr/local/bin
 DATE=`date +%Y-%m-%d`
 
 function mkcd { mkdir -pv "$1" && cd "$1"; } # mkdir then cd
-function mkgit { mkcd "$1" && git init && git remote add origin "https://github.com/cashburn/$1.git"; } # mkcd then git init
+function mkgit { mkcd "$1" && git init && git remote add origin "git@github.com:$1"; } # mkcd then git init
 function gitpull { git pull "https://github.com/cashburn/$1.git" && git remote add origin "https://github.com/cashburn/$1.git"; }
 function gitpush { git add . && git commit -m "$DATE" && git push;}
 function gitrm { git rm `git ls-files --deleted`; }
 function rmclass { find . -type f -name "*.class" -exec rm -f {} \; }
+function rm~ { find . -type f -name "*.*~" -exec rm -f {} \; }
 function edit { pluma $1 & ;}
 function drjava { java -jar ~/.dot/drjava.jar $1 & ;}
 
