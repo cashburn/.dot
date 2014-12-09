@@ -39,7 +39,6 @@ function gitrm { git rm `git ls-files --deleted`; }
 function rmclass { find . -type f -name "*.class" -exec rm -f {} \; }
 function rm~ { find . -type f -name "*.*~" -exec rm -f {} \; }
 function edit { pluma $1 & ;}
-function drjava { java -jar ~/.dot/drjava.jar $1 & ;}
 
 
 #source ~/.oh-my-zsh/custom/plugins/git-completion/git-prompt.sh
