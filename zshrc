@@ -14,7 +14,6 @@ plugins=(git gitfast github zsh-syntax-highlighting web-search dirhistory common
 source $ZSH/oh-my-zsh.sh
 
 
-
 # User configuration
 
 export PATH="$HOME/bin/.amd64-linux:$HOME/bin:/usr/local/bin:/bin:/usr/bin:/sbin:/usr/sbin:/usr/x86_64-pc-linux-gnu/gcc-bin/4.7.3:/usr/games/bin:."
@@ -44,7 +43,7 @@ export LS_COLORS='rs=0:di=01;36:ln=01;35:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;
 
 # Preferred editor for local and remote sessions
  if [[ -n $SSH_CONNECTION ]]; then
-   export EDITOR='nano'
+   export EDITOR='pico'
  else
    export EDITOR='pluma'
  fi
