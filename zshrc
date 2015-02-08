@@ -10,6 +10,13 @@ ZSH_THEME="cashburn"
 # COMPLETION_WAITING_DOTS="true"
   HIST_STAMPS="yyyy-mm-dd"
 
+#Solaris Compatibility
+if [[ "$(uname -s)" == "SunOS" ]]; then
+  eval `/usr/local/bin/defaultpaths`
+else
+  plugins=(git gitfast github zsh-syntax-highlighting web-search dirhistory common-aliases zsh-history-substring-search)
+  export PATH="$HOME/bin/.amd64-linux:$HOME/bin:/usr/local/bin:/bin:/usr/bin:/sbin:/usr/sbin:/usr/x86_64-pc-linux-gnu/gcc-bin/4.7.3:/usr/games/bin:."
+fi
 
 source $ZSH/oh-my-zsh.sh
 
@@ -29,6 +36,7 @@ function gitrm { git rm `git ls-files --deleted`; }
 function rmclass { find . -type f -name "*.class" -exec rm -f {} \; }
 function rm~ { find . -type f -name "*.*~" -exec rm -f {} \; }
 function edit { pluma $1 & ;}
+function cdls { ls "$1" && chdir "$1"; }
 
 #Sorry for the length of this next line...
 #It does some beautiful ls color-coding.
@@ -37,16 +45,14 @@ export LS_COLORS='rs=0:di=01;36:ln=01;35:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;
   export LANG=en_US.UTF-8
 
 alias zshrc="pluma ~/.zshrc &"
+alias sublime="~/bin/Sublime/sublime_text &"
+alias sub="~/bin/Sublime/sublime_text > ~/bin/Sublime/log.txt &"
+alias cd="cdls"
 
-#Solaris Compatibility
-if [[ "$(uname -s)" == "SunOS" ]]; then
-  eval `/usr/local/bin/defaultpaths`
-else
+if [[ "$(uname -s)" != "SunOS" ]]; then
   zmodload zsh/terminfo
   bindkey "$terminfo[kcuu1]" history-substring-search-up
   bindkey "$terminfo[kcud1]" history-substring-search-down
-  plugins=(git gitfast github zsh-syntax-highlighting web-search dirhistory common-aliases zsh-history-substring-search)
-  export PATH="$HOME/bin/.amd64-linux:$HOME/bin:/usr/local/bin:/bin:/usr/bin:/sbin:/usr/sbin:/usr/x86_64-pc-linux-gnu/gcc-bin/4.7.3:/usr/games/bin:."
 fi
 
 
