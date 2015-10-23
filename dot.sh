@@ -10,8 +10,8 @@ git clone git://github.com/zsh-users/zsh-history-substring-search "$HOME/.oh-my-
 #Add any other zsh plugins you want.
 
 ln -s "$HOME/.dot/zshrc" "$HOME/.zshrc" #A customized zsh config file.
+ln -s "$HOME/.dot/vimrc" "$HOME/.vimrc" #A customized zsh config file.
 ln -s "$HOME/.dot/cashburn.zsh-theme" "$HOME/.oh-my-zsh/themes/cashburn.zsh-theme" #My awesome theme.
-ln -s "$HOME/.dot/background.png" "$HOME/Pictures/background.png"   #Just a nice photo I took that I like to use for backgrounds.  TODO: Comment out and delete the picture in .dot if you want.
 ln -s "$HOME/.dot/.gitignore_global" "$HOME/.gitignore_global"   #A nice gitignore file to make git ignore compiled or generated OS files. 
 chsh -s /bin/zsh
 
