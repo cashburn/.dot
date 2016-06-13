@@ -14,7 +14,7 @@ ZSH_THEME="cashburn"
 if [[ "$(uname -s)" == "SunOS" ]]; then
   eval `/usr/local/bin/defaultpaths`
 else
-  plugins=(git gitfast github zsh-syntax-highlighting web-search dirhistory common-aliases zsh-history-substring-search)
+  plugins=(git gitfast github web-search zsh-syntax-highlighting dirhistory common-aliases zsh-history-substring-search)
   export PATH="$PATH:$HOME/bin/.amd64-linux:$HOME/bin:/usr/local/bin:/bin:/usr/bin:/sbin:/usr/sbin:/usr/x86_64-pc-linux-gnu/gcc-bin/4.7.3:/usr/games/bin:."
 fi
 
@@ -52,12 +52,8 @@ alias cd="cdls"
 
 if [[ "$(uname -s)" != "SunOS" ]]; then
   zmodload zsh/terminfo
-  bindkey "$terminfo[kcuu1]" history-substring-search-up
-  bindkey "$terminfo[kcud1]" history-substring-search-down
+  #[[ -n "${terminfo[kcuu1]}" ]] && bindkey "$terminfo[kcuu1]" history-substring-search-up
+  #[[ -n "${terminfo[kcud1]}" ]] && bindkey "$terminfo[kcud1]" history-substring-search-down
 fi
-
-
-export PATH=${PATH}:/p/android-sdk/tools
-export PATH=${PATH}:/p/android-sdk/platform-tools
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
