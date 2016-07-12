@@ -10,3 +10,12 @@ set smartindent
 set number
 " enable syntax highlighting
 syntax on
+<<<<<<< HEAD
+=======
+" Enable basic mouse behavior such as resizing buffers.
+set mouse=a
+if exists('$TMUX')  " Support resizing in tmux
+      set ttymouse=xterm2
+      endif
+
+>>>>>>> f8bb8e86cc6dc2bd81bb5380d530da9a4052dfd2
