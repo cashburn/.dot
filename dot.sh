@@ -11,10 +11,10 @@ source "vim.sh"
 
 #Add any other zsh plugins you want.
 
-ln -s "$HOME/.dot/zshrc" "$HOME/.zshrc" #A customized zsh config file.
-ln -s "$HOME/.dot/vimrc" "$HOME/.vimrc" #A customized vim config file.
-ln -s "$HOME/.dot/bashrc" "$HOME/.bashrc" #A customized bash config file.
-ln -s "$HOME/.dot/vimrc" "$HOME/.vimrc" #A customized vim config file.
+ln -s "zshrc" "$HOME/.zshrc" #A customized zsh config file.
+ln -s "vimrc" "$HOME/.vimrc" #A customized vim config file.
+ln -s "bashrc" "$HOME/.bashrc" #A customized bash config file.
+cp "cashburn.zsh-theme" "$HOME/.oh-my-zsh/themes/cashburn.zsh-theme" #A customized zsh theme
 ln -s "$HOME/.dot/.gitignore_global" "$HOME/.gitignore_global"   #A nice gitignore file to make git ignore compiled or generated OS files. 
 chsh -s /bin/zsh
 
