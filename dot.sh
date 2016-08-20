@@ -15,7 +15,7 @@ git clone git://github.com/robbyrussell/oh-my-zsh.git "$HOME/.oh-my-zsh"
 git clone git://github.com/zsh-users/zsh-syntax-highlighting.git "$HOME/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting" #Makes shell turn green when you type a valid command.
 git clone git://github.com/zsh-users/zsh-history-substring-search "$HOME/.oh-my-zsh/custom/plugins/zsh-history-substring-search" #Type any portion of a past command then press up/down arrows to scroll through use.
 
-source vim.sh
+source "$DIR/vim.sh"
 
 #Add any other zsh plugins you want.
 
