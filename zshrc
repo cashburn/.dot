@@ -52,8 +52,8 @@ alias cd="cdls"
 
 if [[ "$(uname -s)" != "SunOS" ]]; then
   zmodload zsh/terminfo
-  bindkey "$terminfo[kcuu1]" history-substring-search-up
-  bindkey "$terminfo[kcud1]" history-substring-search-down
+  bindkey '^\e[A' history-substring-search-up
+  bindkey '^\e[B' history-substring-search-down
 fi
 
 
