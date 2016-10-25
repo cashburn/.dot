@@ -12,8 +12,8 @@ let g:solarized_termcolors=256
 set t_Co=256 
 set background=dark
 
-colorscheme hybrid
-"color atom, jellybeans, hybrid, solarized 
+"colorscheme hybrid
+colorscheme onedark 
 
 autocmd VimEnter * NERDTree
 autocmd VimEnter * wincmd w
