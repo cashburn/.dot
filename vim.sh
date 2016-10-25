@@ -5,3 +5,4 @@ git clone https://github.com/scrooloose/nerdtree.git ~/.vim/bundle/nerdtree
 git clone https://github.com/ervandew/supertab ~/.vim/bundle/supertab
 mkdir ~/.vim/colors
 curl -LSso ~/.vim/colors/hybrid.vim https://raw.githubusercontent.com/flazz/vim-colorschemes/master/colors/hybrid.vim
+curl -LSso ~/.vim/colors/onedark.vim https://raw.githubusercontent.com/joshdick/onedark.vim/master/colors/onedark.vim
