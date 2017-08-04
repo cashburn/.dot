@@ -10,7 +10,6 @@ Zsh:
 
 Vim (with customized JS, Java, and C++ syntax highlighting)
 - [vim-pathogen](https://github.com/tpope/vim-pathogen)
-- [nerdtree](https://github.com/scrooloose/nerdtree)
 - [supertab](https://github.com/ervandew/supertab)
 - [vim-javascript](https://github.com/pangloss/vim-javascript) with customizations
 - [Java Vim Syntax](http://www.fleiner.com/vim/syntax/java.vim) with customizations
