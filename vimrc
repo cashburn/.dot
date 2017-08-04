@@ -15,11 +15,11 @@ set background=dark
 "colorscheme hybrid
 colorscheme onedark 
 
-autocmd VimEnter * NERDTree
-autocmd VimEnter * wincmd w
-let NERDTreeIgnore=['.o$[[file]]']
-let NERDTreeIgnore=['.h.gch$[[file]]']
-let g:NERDTreeDirArrows=0
+"autocmd VimEnter * NERDTree
+"autocmd VimEnter * wincmd w
+"let NERDTreeIgnore=['.o$[[file]]']
+"let NERDTreeIgnore=['.h.gch$[[file]]']
+"let g:NERDTreeDirArrows=0
 
 execute pathogen#infect()
 
