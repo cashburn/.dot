@@ -16,7 +16,7 @@ Vim (with customized JS, Java, and C++ syntax highlighting)
 - [vim-javascript](https://github.com/pangloss/vim-javascript) with customizations
 - [Java Vim Syntax](http://www.fleiner.com/vim/syntax/java.vim) with customizations
 - [C++ Vim Syntax](http://www.haeggblad.com)
-- [onedark.vim](https://github.com/joshdick/onedark.vim) with customizations
+- [onedark.vim](https://github.com/joshdick/onedark.vim) with customizations, made to look like Atom
 
 ![OneDark Customized Preview](https://raw.githubusercontent.com/cashburn/.dot/master/screenshots/onedark-java.png)
 
