@@ -61,9 +61,4 @@ if [[ "$(uname -s)" != "SunOS" ]]; then
 fi
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-
-PATH=/p/oracle12c:${PATH}
-ORACLE_HOME=/p/oracle12c
-LD_LIBRARY_PATH=/p/oracle12c:${LD_LIBRARY_PATH}
-export PATH ORACLE_HOME LD_LIBRARY_PATH
 export LC_ALL=C
