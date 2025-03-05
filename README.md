@@ -8,7 +8,7 @@ Zsh:
 - [zsh-history-substring-search](https://github.com/zsh-users/zsh-history-substring-search)
 - Color-coded bash/zsh theme
 
-![Zsh theme Preview](https://raw.githubusercontent.com/cashburn/.dot/master/screenshots/zsh-theme.png)
+![Zsh theme Preview](./screenshots/zsh-theme.png)
 
 Vim (with customized JS, Java, and C++ syntax highlighting)
 - [vim-pathogen](https://github.com/tpope/vim-pathogen)
@@ -18,9 +18,12 @@ Vim (with customized JS, Java, and C++ syntax highlighting)
 - [C++ Vim Syntax](http://www.haeggblad.com)
 - [onedark.vim](https://github.com/joshdick/onedark.vim) with customizations, made to look like Atom
 
-![OneDark Customized Preview](https://raw.githubusercontent.com/cashburn/.dot/master/screenshots/onedark-java.png)
+![OneDark Customized Preview](./screenshots/onedark-java.png)
 
 ### Usage
-To set up all customization and switch the default shell to Zsh, run `dot.sh`. To just set up the Vim customization, run `vim.sh`.
+
+1. IMPORTANT! Modify the `zshrc` file to set your username and email
+1. To set up all zsh customization and switch the default shell to zsh, run `./dot.sh`.
+1. To set up the Vim customization, run `./vim.sh`.
 
 

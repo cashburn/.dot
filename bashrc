@@ -11,4 +11,3 @@ function gitrm { git rm `git ls-files --deleted`; }
 function cdls { ls "$1" && cd "$1"; }
 
 alias cd='cdls'
-alias drjava='java -jar ~/bin/drjava.jar &'
