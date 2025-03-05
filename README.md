@@ -3,7 +3,7 @@
 This package includes some customization for Bash, heavy customization for Zsh (preferred), and Vim.
 
 Zsh:
-- [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
+- [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh)
 - [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
 - [zsh-history-substring-search](https://github.com/zsh-users/zsh-history-substring-search)
 - Color-coded bash/zsh theme
